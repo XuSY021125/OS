@@ -1,5 +1,15 @@
 import java.util.ArrayList;
+public class Process {
+    int pid; // 进程ID
+    int arrivalTime; // 到达时间
+    int burstTime; // 执行时间
 
+    public Process(int pid, int arrivalTime, int burstTime) {
+        this.pid = pid;
+        this.arrivalTime = arrivalTime;
+        this.burstTime = burstTime;
+    }
+}
 public class Main {
     public static void main(String[] args) {
         ArrayList<Process> processes = new ArrayList<>();
